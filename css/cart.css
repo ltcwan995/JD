@@ -1,0 +1,292 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #f5f5f5;
+}
+/*搜索栏开始*/
+.jd_topBar{
+    width: 100%;
+    height: 45px;
+    border-bottom:1px solid #e0e0e0;
+    background: url("../images/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+}
+.jd_topBar a[class^='icon_']{
+    position: absolute;
+    top:0;
+    width: 40px;
+    height: 44px;
+    padding:12px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.jd_topBar .icon_back{
+    left:0;
+    background-position: -20px 0;
+}
+.jd_topBar .icon_menu{
+    right:0;
+    background-position: -60px 0;
+}
+.jd_topBar h3{
+    width: 100%;
+    padding:0 40px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-weight: normal;
+}
+
+/*搜索栏结束*/
+
+/*安全提示开始*/
+.jd_safeTip{
+    height: 34px;
+    background: #fff;
+    border-bottom:1px solid #e0e0e0;
+    text-align: center;
+    line-height: 34px;
+}
+.jd_safeTip p{
+    position: relative;
+    display: inline-block;
+    padding-left:23px;
+    font-size: 12px;
+    color:#ccc;
+}
+.jd_safeTip p::before{
+    content:"";
+    position: absolute;
+    top:8px;
+    left:0;
+    background: url("../images/safe_icon.png");
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+
+}
+/*安全提示结束*/
+/*京东店铺开始*/
+.jd_shop{
+    width: 100%;
+    margin-top:10px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background: #fff;
+}
+.jd_shop .jd_shop_tit{
+    background: #fff;
+    height: 34px;
+    position: relative;
+}
+.jd_shop .left_con{
+    position: absolute;
+    width: 40px;
+    top: 0;
+    left: 0;
+}
+.jd_shop .right_con{
+    width: 100%;
+    padding-left:40px;
+    line-height: 34px;
+}
+.jd_check_box{
+    background: url("../images/shop-icon.png") no-repeat;
+    background-size: 50px 100px;
+    width: 40px;
+    height: 34px;
+    padding:7px 10px;
+    display: block;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+.jd_check_box[checked]{
+    background-position: -25px 0;
+}
+.right_con .shop_logo{
+    width: 15px;
+    height: 13px;
+    float:left;
+    margin-top: 10px;
+}
+.right_con .shop_name{
+    float: left;
+    margin-left: 10px;
+}
+.right_con .shop_tip{
+    float: right;
+    margin-right:10px;
+    color:#d8505c;
+}
+.right_con .product_img{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.right_con .product_img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.jd_product{
+    position: relative;
+    padding:10px 0;
+    border-top:1px solid #ccc;
+}
+.product_info{
+    overflow: hidden;
+    padding:0 10px;
+}
+.product_info .info_name{
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+}
+.product_info .info_price{
+    color:#d8505c;
+    padding: 5px 0;
+    line-height: 15px;
+}
+.product_info .info_option{
+
+}
+.info_option .change_num{
+    float: left;
+}
+.info_option .delete_btn{
+    float: right;
+}
+.change_num span{
+    float: left;
+    width: 32px;
+    height: 24px;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 24px;
+}
+.change_num span:nth-child(1){
+    border-top-left-radius:2px;
+    border-bottom-left-radius: 2px;
+}
+.change_num span:nth-child(3){
+    border-top-right-radius:2px;
+    border-bottom-right-radius: 2px;
+}
+.change_num input{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    height: 24px;
+    width: 32px;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+}
+.delete_btn .delete_up{
+    display: block;
+    width: 20px;
+    height: 5px;
+    background: url("../images/delete_up.png");
+    background-size: 20px 5px;
+    margin-left: -1px;
+}
+.delete_btn .delete_down{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/delete_down.png");
+    background-size: 18px 18px;
+}
+/*京东店铺结束*/
+/*遮罩层*/
+.jd_mask{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.jd_confirm{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    width: 80%;
+    height: 100px;
+    margin-left:10%;
+    background: #fff;
+    border-radius: 10px;
+    animation: move 1s;
+
+}
+@keyframes move {
+    0%{
+        top:-50%;
+    }
+    80%{
+        top:60%;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+    90%{
+        top:50%;
+    }
+    100%{
+        top:50%;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+}
+@-webkit-keyframes move {
+    0%{
+        top:-50%;
+    }
+    80%{
+        top:60%;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+    90%{
+        top:50%;
+    }
+    100%{
+        top:50%;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+}
+.jd_confirm h3{
+    text-align: center;
+    height: 50px;
+    margin:0 10px;
+    line-height: 50px;
+    font-weight: normal;
+    border-bottom:1px solid #ccc;
+}
+.jd_confirm a{
+
+    width: 40%;
+    margin-top:10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.jd_confirm a:first-child{
+    float: left;
+    margin-left: 10px;
+    transition: all 1s;
+}
+.jd_confirm a:last-child{
+    float: right;
+    margin-right:10px;
+    background: #d8505c;
+    color:#fff;
+}
+/*遮罩层*/

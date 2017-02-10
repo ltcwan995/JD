@@ -1,0 +1,274 @@
+body{
+    background: #f5f5f5;
+}
+.jd_layout{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+}
+/*京东头部start*/
+.jd_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+.jd_header_box{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    height: 40px;
+    background: rgba(201,21,35,0);
+    position: relative;
+
+}
+.jd_header_box .icon_logo{
+    background-position: 0 -103px;
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+.jd_header_box form{
+    width: 100%;
+    padding-left: 75px;
+    padding-right:50px;
+}
+.jd_header_box form input{
+    width: 100%;
+    height: 30px;
+    margin-top:5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding-left:25px;
+
+}
+.jd_header_box .login{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:#fff;
+    text-align: center;
+    line-height:40px;
+}
+.jd_header_box .icon_search{
+    background-position: -60px -109px;
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+/*京东头部end*/
+
+/*京东轮播图开始*/
+.jd_banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.jd_banner ul:first-child{
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    width: 1000%;
+}
+.jd_banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.jd_banner ul:first-child li a{
+    display: block;
+    width: 100%;
+}
+.jd_banner ul:first-child li a img{
+    width: 100%;
+    display: block;
+}
+.jd_banner ul:last-child{
+    width: 118px;
+    height: 10px;
+    position: absolute;
+    bottom:5px;
+    /*居中*/
+    left:50%;
+    transform: translateX(-59px);
+    -webkit-transform: translateX(-59px);
+}
+.jd_banner ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    float: left;
+    -webkit-border-radius: 3px;
+    border:1px solid #fff;
+    margin-right:10px;
+}
+.jd_banner ul:last-child li:last-child{
+    margin-right:0px;
+}
+.jd_banner ul:last-child li.now{
+    background: #fff;
+}
+/*京东轮播图结束*/
+/*京东分类导航开始*/
+.jd_nav{
+    width: 100%;
+}
+.jd_nav ul{
+    width: 100%;
+}
+.jd_nav ul li{
+    margin-top:10px;
+    width: 25%;
+    float: left;
+}
+.jd_nav ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_nav ul li a img{
+    width: 60%;
+    margin-left:20%;
+}
+.jd_nav ul li a p{
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+}
+/*京东分类导航结束*/
+/*京东商品区块start*/
+.jd_product_box{
+    margin-top:10px;
+    width: 100%;
+    min-height: 200px;
+    background: #fff;
+}
+.sk .product_tit{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.sk .product_tit i{
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 16px;
+    height: 20px;
+    background: url("../images/seckill-icon.png");
+    background-size:16px 20px;
+
+}
+.sk .product_tit h3{
+    font-size: 16px;
+    color:#d8505c;
+    padding-left:30px;
+    font-weight: normal;
+    float:left;
+}
+.sk .product_tit div{
+    float:left;
+    height: 30px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.sk .product_tit div span{
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    text-align: center;
+    background: #333;
+    float: left;
+    margin-right: 3px;
+    color: #fff;
+    margin-top: 8px;
+}
+.sk .product_tit div span:nth-child(3n){
+    width: 4px;
+    text-align: center;
+    background: #fff;
+    color:#000;
+}
+.sk .product_con ul{
+    width: 100%;
+}
+.sk .product_con ul li{
+    padding-top:10px;
+    width: 33.3333%;
+    float: left;
+
+}
+.sk .product_con ul li:last-child a{
+    border-right:none;
+}
+.sk .product_con ul li a{
+    display: block;
+    width: 100%;
+    border-right:1px solid #e0e0e0;
+}
+.sk .product_con ul li a img{
+    width: 64%;
+    margin-left:18%;
+}
+.sk .product_con ul li p{
+    text-align: center;
+}
+.sk .product_con ul li p:first-of-type{
+    color:#d8505c;
+}
+.sk .product_con ul li p:last-child{
+    text-decoration: line-through;
+}
+.w_50{
+    display: block;
+    width: 50%;
+}
+.w_50 img{
+    display: block;
+    width: 100%;
+}
+.jd_product .jd_product_box:nth-child(n+2) .product_tit{
+    height: 32px;
+    line-height: 32px;
+    border-bottom:1px solid #e0e0e0;
+}
+.jd_product .jd_product_box:nth-child(n+2) .product_tit h3{
+    font-size: 15px;
+    position: relative;
+    font-weight: normal;
+    color:#666;
+    padding-left:18px;
+}
+.jd_product_box:nth-child(n+2) .product_tit h3::before{
+    content:"";
+    position: absolute;
+    top: 10px;
+    left:10px;
+    height: 12px;
+    width: 3px;
+    background: #d8505c;
+}
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}
+.b_b{
+    border-bottom:1px solid #e0e0e0;
+}
+.b_r{
+    border-right:1px solid #e0e0e0;
+}
+.b_l{
+    border-left:1px solid #e0e0e0;
+}
+/*京东商品区end*/
